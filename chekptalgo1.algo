@@ -1,0 +1,21 @@
+ALGORITHM chekptalgo
+VAR
+    l,v,w,i: INTEGER;
+    c: STRING;
+BEGIN
+   l:=0;
+   w:=1; 
+   v:=0;
+   Voy:=['A','E','I','O','U'];
+   read (c);
+    IF ( c[i]=" ") THEN
+      w:= w+1;
+   END_IF
+   IF (c[i].ToUpper in Voy) THEN
+   v:=v+1;
+   END_IF
+WHILE ((c[i]:='.')) DO
+    l:= l+length(c)
+END_WHILE 
+
+END
